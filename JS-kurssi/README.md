@@ -1,4 +1,4 @@
-# JavaExercises
+# Java Exercises
 
 git order:
 1) git add .
