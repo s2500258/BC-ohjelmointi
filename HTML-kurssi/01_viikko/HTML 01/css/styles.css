@@ -1,0 +1,26 @@
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    color: rgb(49, 124, 182);
+  }
+li {
+    color:rgb(52, 28, 233);
+}
+a {
+    color:blueviolet;
+}
+img {
+  /*  display: flex;
+    justify-content: center; */
+}
+/* div {
+    display: flex;
+    justify-content: center; 
+    align-content: center;  
+} */
