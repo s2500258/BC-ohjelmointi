@@ -99,3 +99,14 @@ let b=7;
 let c=20;
 console.log("The largest number is", Math.max(a,b,c));
 console.log("The smallest number is", Math.min(a,b,c));
+
+// Määrittele funktio, joka muuntaa lämpötilan Fahrenheit-asteista Celsius-asteiksi.
+// Tämä funktio käyttää kaavaa (Fahrenheit - 32) * 5/9
+// Saatu lämpötila pyöristetään yhteen desimaaliin tarkkuuden vuoksi.
+console.log("");
+console.log (" --------- Numerot 02 --------- ");
+function FahCal(Fah){
+    return (Fah-32)*5/9;
+}
+let x=100;
+console.log("Celcius for",x, "is", FahCal(x));
