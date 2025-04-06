@@ -294,3 +294,36 @@ Muussa tapauksessa palauta "Ehkä joku toinen päivä."
 Kutsu funktiota eri yhdistelmillä ehtoja.
 */
 console.log (" --------- Ehtolauseet 13 --------- ");
+function planAdventure (isWeekend, isSunny, likesFoxes){
+    if (isWeekend==true && isSunny==true && likesFoxes==true) {
+        return "Täydellinen päivä kettuseikkailulle!";
+    }
+        else {
+            if (isWeekend==true || isSunny==true){
+                return "Hyvä päivä, mutta ei täydellinen.";
+            }
+            else {
+                return "Ehkä joku toinen päivä.";
+                }
+            }    
+}
+console.log("Tuesday, sunny and like foxes - ",planAdventure(false,true,true));
+console.log("Sunday, rainy and like foxes - ",planAdventure(true,false,true));
+console.log("Tuesday, rainy and don't like foxes - ",planAdventure(false,false,false));
+console.log("Tuesday, sunny and don't like foxes - ",planAdventure(false,true,false));
+console.log("Sunday, sunny and don't like foxes - ",planAdventure(false,true,true));
+console.log("Sunday, sunny and like foxes - ",planAdventure(true,true,true));
+/* 
+Kirjoita funktio nimeltä rainAdvice:
+Ota parametri isRaining.
+Käytä ternary operatoria palauttamaan:
+- "Pysy sisällä" jos isRaining on tosi.
+- "Nauti ulkoilmasta!" muussa tapauksessa.
+Kutsu funktiota eri arvoilla isRaining.
+*/
+console.log (" --------- Ehtolauseet 14 --------- ");
+function rainAdvice(isRaining){
+    return isRaining ? "Pysy sisällä" : "Nauti ulkoilmasta!"; 
+}
+console.log("It is raining so...",rainAdvice(true));
+console.log("It is raining so...",rainAdvice(false));
