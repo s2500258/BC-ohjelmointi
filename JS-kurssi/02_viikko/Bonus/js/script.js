@@ -35,6 +35,7 @@ function magicText(){
     }
 }
 function magicBall(){
-    alert(magicText());
+    document.getElementById("result").innerHTML = magicText();
+    //  alert(magicText());
   //  console.log(num1);
 }
