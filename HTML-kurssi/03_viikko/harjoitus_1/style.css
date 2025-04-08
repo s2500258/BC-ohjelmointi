@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Underdog");
+@import url("https://fonts.googleapis.com/css?family=Kanit");
+
+
+h1 {
+   font-family: "Underdog"; 
+   color: blue;
+}
+p {
+    font-family: sans-serif;
+    font-family: "Kanit";
+}
+body {
+    background-color: blanchedalmond;
+}
+.par1 {
+    color:blueviolet;
+}
+.par2 {
+    color:brown;
+}
+.gradient-box {
+    background: rgb(30,133,101);
+    background: linear-gradient(90deg, rgba(30,133,101,1) 0%, rgba(207,255,100,1) 35%, rgba(255,248,0,1) 100%);
+}

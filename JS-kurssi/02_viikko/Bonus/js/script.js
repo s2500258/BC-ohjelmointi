@@ -39,3 +39,5 @@ function magicBall(){
     //  alert(magicText());
   //  console.log(num1);
 }
+
+// ainoa ongelmani on kääntää kaikki suomesta ja takaisin nopeasti
