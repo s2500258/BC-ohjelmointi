@@ -4,8 +4,27 @@ Kirjoita funktio nimeltä countdownTimer:
 - Tulosta jokainen luku laskevassa järjestyksessä nollaan asti
 - Lopuksi tulosta: "Aika loppui!".
 */
-let luku=prompt("Kuinka monta?");
-for (i=luku;i>=0;i--){
-    console.log(i);
-    //sleep(1);
+/*function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+*/
+
+/* let luku=prompt("Kuinka monta?");
+for (i=luku;i>0;i--){
+   console.log(i);
 }
+console.log("Aika loppui!"); 
+let s="";
+function bla(){
+    console.log(Math.random());
+} */
+
+let luku=prompt("Kuinka monta?");
+for (i=0;i<luku;i++){
+  (function(num) {
+    setTimeout(() => {console.log(luku-num);}, (num)*1000);
+  })(i);
+}
+
+setTimeout(() => {console.log("Aika loppui!");}, luku*1000);
+
