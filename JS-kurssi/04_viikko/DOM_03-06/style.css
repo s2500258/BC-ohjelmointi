@@ -1,0 +1,12 @@
+div {
+    background: gainsboro;
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    border: 2px dotted grey;
+    display: inline-table;
+    text-align: center;
+}
+.mainInput {
+    border-width: 2px;
+}

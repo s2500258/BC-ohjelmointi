@@ -29,8 +29,6 @@ function minusYksi(){
     }
 }
 
-document.getElementById("inc-button").addEventListener("click", function() {plusYksi()
-});
+document.getElementById("inc-button").addEventListener("click", function() {plusYksi()});
 
-document.getElementById("dec-button").addEventListener("click", function() {minusYksi()
-});
+document.getElementById("dec-button").addEventListener("click", function() {minusYksi()});
