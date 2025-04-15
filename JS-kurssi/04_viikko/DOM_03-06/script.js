@@ -5,7 +5,8 @@ Kirjoita JavaScript-koodi, joka:
 - Käyttää input-tapahtumaa, jotta päivitys tapahtuu reaaliajassa.
 */
 document.getElementById("input03").addEventListener("input",function(){
-document.getElementById("output03").textContent=document.getElementById("input03").value;
+    let str=document.getElementById("input03").value;
+    document.getElementById("output03").textContent=str;
 });
 
 /*
@@ -30,3 +31,24 @@ Kirjoita JavaScript-koodi, joka:
 - Vaihtaa taustavärin satunnaiseksi, kun painiketta klikataan.
 - Päivittää kappaleen tekstivärin vastaamaan käyttäjän syöttämää arvoa.
 */
+document.getElementById("button05").addEventListener("click",function(){
+    document.getElementById("div5").style.backgroundColor='#' + Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById("teksti05").style.color=document.getElementById("input05").value;
+});
+
+/* 
+Luo lomake, jossa on pakolliset nimi- ja sähköpostikentät.
+Kirjoita JavaScript-koodi, joka:
+- Estää lomakkeen lähetyksen, jos jompikumpi kenttä on tyhjä.
+- Näyttää virheilmoituksen, jos kenttiä on tyhjänä.
+*/
+function basicCheck(event){
+    event.preventDefault();
+    if (document.getElementById("nimiTeksti").value=="" || document.getElementById("emailTeksti").value==""){
+        alert("Tietosi ovat epätäydellisiä!");
+    }
+    else {
+alert("Kiitos!");
+    }
+}
+document.getElementById("dom06").addEventListener("submit",basicCheck);

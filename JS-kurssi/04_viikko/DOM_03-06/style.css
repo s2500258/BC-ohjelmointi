@@ -10,3 +10,9 @@ div {
 .mainInput {
     border-width: 2px;
 }
+form {
+    border: 1px dotted;
+    width: 340px;
+    text-align: center;
+    display: inline-table;
+}
